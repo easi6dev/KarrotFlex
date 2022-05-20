@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772672F02837725200930B93 /* PinLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772672EF2837725200930B93 /* PinLayout.xcframework */; };
+		772672F12837725200930B93 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 772672EF2837725200930B93 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77CEA03D2836BF1B00B3D152 /* FlexLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */; };
+		77CEA03E2836BF1B00B3D152 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		OBJ_194 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Exported.swift */; };
+		OBJ_195 /* Flex+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Flex+Extension.swift */; };
+		OBJ_196 /* FlexCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FlexCenter.swift */; };
+		OBJ_197 /* FlexHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FlexHStack.swift */; };
+		OBJ_198 /* FlexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FlexItem.swift */; };
+		OBJ_199 /* FlexOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FlexOverlay.swift */; };
+		OBJ_200 /* FlexSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FlexSpacer.swift */; };
+		OBJ_201 /* FlexStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FlexStack.swift */; };
+		OBJ_202 /* FlexVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FlexVStack.swift */; };
+		OBJ_203 /* FlexWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FlexWrap.swift */; };
+		OBJ_230 /* FlexCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* FlexCenterTests.swift */; };
+		OBJ_231 /* FlexHStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* FlexHStackTests.swift */; };
+		OBJ_232 /* FlexOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* FlexOverlayTests.swift */; };
+		OBJ_233 /* FlexVStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* FlexVStackTests.swift */; };
+		OBJ_234 /* FlexWrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* FlexWrapTests.swift */; };
+		OBJ_235 /* KarrotFlexTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* KarrotFlexTestView.swift */; };
+		OBJ_238 /* KarrotFlex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KarrotFlex::KarrotFlex::Product" /* KarrotFlex.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77CEA0352836BCB800B3D152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KarrotFlex::KarrotFlex";
+			remoteInfo = KarrotFlex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77CEA03F2836BF1B00B3D152 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77CEA03E2836BF1B00B3D152 /* FlexLayout.xcframework in Embed Frameworks */,
+				772672F12837725200930B93 /* PinLayout.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		772672EF2837725200930B93 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PinLayout.xcframework; path = Carthage/Build/PinLayout.xcframework; sourceTree = "<group>"; };
+		77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlexLayout.xcframework; path = Carthage/Build/FlexLayout.xcframework; sourceTree = "<group>"; };
+		"KarrotFlex::KarrotFlex::Product" /* KarrotFlex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KarrotFlex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KarrotFlex::KarrotFlexTests::Product" /* KarrotFlexTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = KarrotFlexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Flex+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flex+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* FlexCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenter.swift; sourceTree = "<group>"; };
+		OBJ_12 /* FlexHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStack.swift; sourceTree = "<group>"; };
+		OBJ_13 /* FlexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexItem.swift; sourceTree = "<group>"; };
+		OBJ_139 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = SOURCE_ROOT; };
+		OBJ_14 /* FlexOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexOverlay.swift; sourceTree = "<group>"; };
+		OBJ_140 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_141 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_142 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_143 /* KarrotFlex.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KarrotFlex.podspec; sourceTree = "<group>"; };
+		OBJ_15 /* FlexSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexSpacer.swift; sourceTree = "<group>"; };
+		OBJ_16 /* FlexStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexStack.swift; sourceTree = "<group>"; };
+		OBJ_17 /* FlexVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStack.swift; sourceTree = "<group>"; };
+		OBJ_18 /* FlexWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrap.swift; sourceTree = "<group>"; };
+		OBJ_21 /* FlexCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenterTests.swift; sourceTree = "<group>"; };
+		OBJ_22 /* FlexHStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStackTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* FlexOverlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexOverlayTests.swift; sourceTree = "<group>"; };
+		OBJ_24 /* FlexVStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexVStackTests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* FlexWrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexWrapTests.swift; sourceTree = "<group>"; };
+		OBJ_26 /* KarrotFlexTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarrotFlexTestView.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				77CEA03D2836BF1B00B3D152 /* FlexLayout.xcframework in Frameworks */,
+				772672F02837725200930B93 /* PinLayout.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_238 /* KarrotFlex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77CEA03B2836BF1B00B3D152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				772672EF2837725200930B93 /* PinLayout.xcframework */,
+				77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"KarrotFlex::KarrotFlex::Product" /* KarrotFlex.framework */,
+				"KarrotFlex::KarrotFlexTests::Product" /* KarrotFlexTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_19 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* KarrotFlexTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* KarrotFlexTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* FlexCenterTests.swift */,
+				OBJ_22 /* FlexHStackTests.swift */,
+				OBJ_23 /* FlexOverlayTests.swift */,
+				OBJ_24 /* FlexVStackTests.swift */,
+				OBJ_25 /* FlexWrapTests.swift */,
+				OBJ_26 /* KarrotFlexTestView.swift */,
+			);
+			name = KarrotFlexTests;
+			path = Tests/KarrotFlexTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_19 /* Tests */,
+				OBJ_131 /* Products */,
+				OBJ_139 /* res */,
+				OBJ_140 /* Example */,
+				OBJ_141 /* LICENSE */,
+				OBJ_142 /* README.md */,
+				OBJ_143 /* KarrotFlex.podspec */,
+				77CEA03B2836BF1B00B3D152 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* KarrotFlex */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* KarrotFlex */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Exported.swift */,
+				OBJ_10 /* Flex+Extension.swift */,
+				OBJ_11 /* FlexCenter.swift */,
+				OBJ_12 /* FlexHStack.swift */,
+				OBJ_13 /* FlexItem.swift */,
+				OBJ_14 /* FlexOverlay.swift */,
+				OBJ_15 /* FlexSpacer.swift */,
+				OBJ_16 /* FlexStack.swift */,
+				OBJ_17 /* FlexVStack.swift */,
+				OBJ_18 /* FlexWrap.swift */,
+			);
+			name = KarrotFlex;
+			path = Sources/KarrotFlex;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"KarrotFlex::KarrotFlex" /* KarrotFlex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_190 /* Build configuration list for PBXNativeTarget "KarrotFlex" */;
+			buildPhases = (
+				OBJ_193 /* Sources */,
+				OBJ_204 /* Frameworks */,
+				77CEA03F2836BF1B00B3D152 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KarrotFlex;
+			productName = KarrotFlex;
+			productReference = "KarrotFlex::KarrotFlex::Product" /* KarrotFlex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"KarrotFlex::KarrotFlexTests" /* KarrotFlexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_226 /* Build configuration list for PBXNativeTarget "KarrotFlexTests" */;
+			buildPhases = (
+				OBJ_229 /* Sources */,
+				OBJ_236 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_245 /* PBXTargetDependency */,
+			);
+			name = KarrotFlexTests;
+			productName = KarrotFlexTests;
+			productReference = "KarrotFlex::KarrotFlexTests::Product" /* KarrotFlexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "KarrotFlex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"KarrotFlex::KarrotFlex" /* KarrotFlex */,
+				"KarrotFlex::KarrotFlexTests" /* KarrotFlexTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_194 /* Exported.swift in Sources */,
+				OBJ_195 /* Flex+Extension.swift in Sources */,
+				OBJ_196 /* FlexCenter.swift in Sources */,
+				OBJ_197 /* FlexHStack.swift in Sources */,
+				OBJ_198 /* FlexItem.swift in Sources */,
+				OBJ_199 /* FlexOverlay.swift in Sources */,
+				OBJ_200 /* FlexSpacer.swift in Sources */,
+				OBJ_201 /* FlexStack.swift in Sources */,
+				OBJ_202 /* FlexVStack.swift in Sources */,
+				OBJ_203 /* FlexWrap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_230 /* FlexCenterTests.swift in Sources */,
+				OBJ_231 /* FlexHStackTests.swift in Sources */,
+				OBJ_232 /* FlexOverlayTests.swift in Sources */,
+				OBJ_233 /* FlexVStackTests.swift in Sources */,
+				OBJ_234 /* FlexWrapTests.swift in Sources */,
+				OBJ_235 /* KarrotFlexTestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KarrotFlex::KarrotFlex" /* KarrotFlex */;
+			targetProxy = 77CEA0352836BCB800B3D152 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KarrotFlex.xcodeproj/KarrotFlex_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KarrotFlex;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KarrotFlex;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KarrotFlex.xcodeproj/KarrotFlex_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KarrotFlex;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KarrotFlex;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLEXLAYOUT_SWIFT_PACKAGE,
+					FLEXLAYOUT_SWIFT_PACKAGE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/YogaKit/include",
+					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/yoga/include",
+					"$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit",
+					"$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga",
+				);
+				INFOPLIST_FILE = KarrotFlex.xcodeproj/KarrotFlexTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) FLEXLAYOUT_SWIFT_PACKAGE";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KarrotFlexTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					FLEXLAYOUT_SWIFT_PACKAGE,
+					FLEXLAYOUT_SWIFT_PACKAGE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/YogaKit/include",
+					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/yoga/include",
+					"$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit",
+					"$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga",
+				);
+				INFOPLIST_FILE = KarrotFlex.xcodeproj/KarrotFlexTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) FLEXLAYOUT_SWIFT_PACKAGE";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KarrotFlexTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_190 /* Build configuration list for PBXNativeTarget "KarrotFlex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_191 /* Debug */,
+				OBJ_192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "KarrotFlex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_226 /* Build configuration list for PBXNativeTarget "KarrotFlexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_227 /* Debug */,
+				OBJ_228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
