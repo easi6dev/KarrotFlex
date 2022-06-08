@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		772672F02837725200930B93 /* PinLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772672EF2837725200930B93 /* PinLayout.xcframework */; };
-		772672F12837725200930B93 /* PinLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 772672EF2837725200930B93 /* PinLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77CEA03D2836BF1B00B3D152 /* FlexLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */; };
-		77CEA03E2836BF1B00B3D152 /* FlexLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_194 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Exported.swift */; };
 		OBJ_195 /* Flex+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Flex+Extension.swift */; };
 		OBJ_196 /* FlexCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FlexCenter.swift */; };
@@ -40,26 +38,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		77CEA03F2836BF1B00B3D152 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				77CEA03E2836BF1B00B3D152 /* FlexLayout.xcframework in Embed Frameworks */,
-				772672F12837725200930B93 /* PinLayout.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		772672EF2837725200930B93 /* PinLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PinLayout.xcframework; path = Carthage/Build/PinLayout.xcframework; sourceTree = "<group>"; };
 		77CEA03C2836BF1B00B3D152 /* FlexLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlexLayout.xcframework; path = Carthage/Build/FlexLayout.xcframework; sourceTree = "<group>"; };
 		"KarrotFlex::KarrotFlex::Product" /* KarrotFlex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KarrotFlex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"KarrotFlex::KarrotFlexTests::Product" /* KarrotFlexTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = KarrotFlexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KarrotFlex::KarrotFlexTests::Product" /* KarrotFlexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = KarrotFlexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Flex+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flex+Extension.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* FlexCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexCenter.swift; sourceTree = "<group>"; };
 		OBJ_12 /* FlexHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexHStack.swift; sourceTree = "<group>"; };
@@ -196,7 +179,6 @@
 			buildPhases = (
 				OBJ_193 /* Sources */,
 				OBJ_204 /* Frameworks */,
-				77CEA03F2836BF1B00B3D152 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,10 +358,7 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					FLEXLAYOUT_SWIFT_PACKAGE,
-					FLEXLAYOUT_SWIFT_PACKAGE,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/YogaKit/include",
@@ -398,7 +377,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) FLEXLAYOUT_SWIFT_PACKAGE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = KarrotFlexTests;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
@@ -417,10 +396,7 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					FLEXLAYOUT_SWIFT_PACKAGE,
-					FLEXLAYOUT_SWIFT_PACKAGE,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/.build/checkouts/FlexLayout/Sources/YogaKit/include",
@@ -439,7 +415,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYogaKit/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/KarrotFlex.xcodeproj/GeneratedModuleMap/FlexLayoutYoga/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) FLEXLAYOUT_SWIFT_PACKAGE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = KarrotFlexTests;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
