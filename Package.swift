@@ -16,8 +16,8 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      url: "https://github.com/layoutBox/FlexLayout",
-      .upToNextMajor(from: "1.3.0")
+      url: "https://github.com/woohyunjin06/FlexLayout",
+      .upToNextMajor(from: "1.3.33")
     ),
     .package(
       url: "https://github.com/layoutBox/PinLayout",
@@ -32,17 +32,8 @@ let package = Package(
     .target(
       name: "KarrotFlex",
       dependencies: [
-        .product(name: "FlexLayout", package: "FlexLayout"),
+        .product(name: "FlexLayoutBinary", package: "FlexLayout"),
         .product(name: "PinLayout", package: "PinLayout"),
-      ],
-      cSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      cxxSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      swiftSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ]
     ),
     .testTarget(
@@ -50,15 +41,6 @@ let package = Package(
       dependencies: [
         "KarrotFlex",
         .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
-      ],
-      cSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      cxxSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      swiftSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ]
     ),
   ]
