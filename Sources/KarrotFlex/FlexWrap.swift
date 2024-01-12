@@ -14,19 +14,20 @@ public enum FlexWrapDirection {
 
 @discardableResult
 public func FlexWrap(_ flex: Flex,
+                     spacing: CGFloat = 0,
                      direction: FlexWrapDirection,
                      children: [UIView],
                      childDefine: ((Flex) -> Void)? = nil) -> Flex {
   switch direction {
   case .horizontal:
-    return FlexHStack(flex) { flex in
+    return FlexHStack(flex, spacing: spacing) { flex in
       children.forEach { child in
         childDefine?(child.flex)
         FlexItem(flex, view: child)
       }
     }.wrap(.wrap)
   case .vertical:
-    return FlexVStack(flex) { flex in
+    return FlexVStack(flex, spacing: spacing) { flex in
       children.forEach { child in
         childDefine?(child.flex)
         FlexItem(flex, view: child)

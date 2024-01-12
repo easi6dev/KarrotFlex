@@ -1,2 +1,2 @@
-github "layoutBox/FlexLayout" ~> 1.3.0
+github "woohyunjin06/FlexLayout" "master"
 github "easi6dev/PinLayout" "master"

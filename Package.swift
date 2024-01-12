@@ -17,11 +17,11 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/layoutBox/FlexLayout",
-      .upToNextMajor(from: "1.3.0")
+      .upToNextMajor(from: "2.0.05")
     ),
     .package(
       url: "https://github.com/layoutBox/PinLayout",
-      .upToNextMajor(from: "1.10.0")
+      .upToNextMajor(from: "1.10.5")
     ),
     .package(
       url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
@@ -34,15 +34,6 @@ let package = Package(
       dependencies: [
         .product(name: "FlexLayout", package: "FlexLayout"),
         .product(name: "PinLayout", package: "PinLayout"),
-      ],
-      cSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      cxxSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      swiftSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ]
     ),
     .testTarget(
@@ -50,16 +41,9 @@ let package = Package(
       dependencies: [
         "KarrotFlex",
         .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
-      ],
-      cSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      cxxSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
-      ],
-      swiftSettings: [
-        .define("FLEXLAYOUT_SWIFT_PACKAGE"),
       ]
     ),
-  ]
+  ],
+  cLanguageStandard: .gnu99,
+  cxxLanguageStandard: .gnucxx11
 )

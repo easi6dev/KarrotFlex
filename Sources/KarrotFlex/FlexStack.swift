@@ -25,11 +25,13 @@ public enum FlexStackDirection {
 
 @discardableResult
 public func FlexStack(_ flex: Flex,
+                      spacing: CGFloat = 0,
                       direction: FlexStackDirection,
                       justifyContent: Flex.JustifyContent = .start,
                       alignItems: Flex.AlignItems = .start,
                       _ closure: @escaping (Flex) -> Void) -> Flex {
   flex.addItem()
+    .gap(spacing)
     .direction(direction.rawValue)
     .justifyContent(justifyContent)
     .alignItems(alignItems)
